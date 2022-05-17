@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <img id="bg-img" src="./images/bg-desktop-dark.jpg" alt="">
+    
+    <div class="content">
+    <div class="title">
+      <h1>T  O  D  O</h1>
+      <img id="mode" src="./images/icon-sun.svg" alt="SUN SVG">
+    </div>
+ 
+    <div class="create-content content-template">
+     <input type="checkbox" id="check-box" >
+      <input class="input-box" type="text" placeholder="Create a new todo...">
+    </div>
+
+      <div class="todo-content">
+        <ul class="todo-list">
+        </ul>
+        
+          
+        <div class="content-template setup">
+          <div class="notes">
+            <div><span class="count"></span>  items left</div>
+            <button class="clear-completed">Clear Completed</button>
+          </div>
+       
+        <div class="sort"> 
+          <button class="all sort-btn">All</button>
+          <button class="active sort-btn">Active</button>
+          <button class="completed sort-btn">Completed</button>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
