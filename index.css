@@ -17,21 +17,23 @@ body{
 
 .container > img{
     width: 100%;
-    margin-left: 5vh;
+    /* margin-left: 2rem; */
+    margin-right: 2rem;
     position: static;
     z-index: 0;
-    top: 0px;
+    top: 0;
 }
 
 .content{
     position: absolute;
     z-index: 9999;
-    top: 10vh;
-    margin-left: 65vh;
+    top: 5rem;
+    margin-left: 25rem;
+    /* margin-right: 30rem; */
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 35rem;
 }
 
 /* 标题 */
@@ -44,7 +46,7 @@ body{
 
 .title > h1{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.7em;
     color: #ffffff;
 }
 
@@ -57,21 +59,21 @@ body{
 .content-template{
     background-color: hsl(235, 24%, 19%);
     overflow: hidden;
-    height: 7vh;
+    height: 3em;
     display: flex;
 }
 
 .input-box {
     background-color: transparent;
-    height: 5vh;
+    height: 2.5em;
     width: 80%;
     border-style: none;
     outline-style: none;
-    margin-left: 4vh;
-    margin-top: 1vh;
+    margin-left: 1.5em;
+    margin-top: 0.4em;
     color: hsl(234, 39%, 85%);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .input-box:focus::placeholder{
@@ -79,7 +81,7 @@ body{
 }
 
 .todo-content{
-    margin-top: 30px;
+    margin-top: 2em;
 }
 
 ul {
@@ -91,16 +93,16 @@ ul {
 
 li{
     position: relative;
-    border-bottom: 0.01vh solid hsl(234, 11%, 52%);
+    border-bottom: 0.01em solid hsl(234, 11%, 52%);
     cursor: pointer;
 }
 
 input[type="checkbox"]{
     align-self: center;
-    margin-left:3vh;
-    width: 3vh;
-    height: 3vh;
-    border: 1px solid hsl(234, 11%, 52%);
+    margin-left:2em;
+    width: 1.7em;
+    height: 1.7em;
+    border: 0.1em solid hsl(234, 11%, 52%);
     position: relative;
     appearance: none;
     -webkit-appearance: none;
@@ -134,7 +136,7 @@ input[type="checkbox"]::before{
     }
 
 input[type="checkbox"]:hover {
-    border: 1px solid hsl(280, 87%, 65%);
+    border: 0.1em solid hsl(280, 87%, 65%);
     }
 
 input[type="checkbox"]::after {
@@ -147,17 +149,17 @@ input[type="checkbox"]::after {
 }
 
 .new-add > label{
-    height: 6vh;
-    margin-left: 4vh;
-    margin-top: 2.5vh;
+    height: 2em;
+    margin-left: 2em;
+    margin-top: 1.1em;
 }
 
 .delete-button{
     background-color: transparent;
     border:none;
     position: absolute;
-    margin-left: 60vh;
-    margin-top: 2.3vh;
+    margin-left: 32em;
+    margin-top: 1.3em;
     cursor: pointer;
 }
 
@@ -174,7 +176,7 @@ input[type="checkbox"]::after {
 /* 拦末设置行 */
 .setup{
     background-color: hsl(235, 24%, 19%);
-    font-size: 14px;
+    font-size: 0.8em;
     color: hsl(234, 11%, 52%);
 }
 
@@ -185,11 +187,11 @@ input[type="checkbox"]::after {
     z-index: 1;
     width: 100%;
     align-items: center;
-    margin: 0 5vh;
+    margin: 0 2em;
 }
 
 .notes > .count{
-   width: 0.5vh;
+   width: 0.5em;
 }
 
 .sort{
@@ -222,13 +224,12 @@ input[type="checkbox"]::after {
 /* 更换模式 */
 .light-theme .container{
     width: 1440px;
-    height: 100vh;
 }
 
 .light-theme .content-template{
     background-color: hsl(0, 0%, 98%);
     overflow: hidden;
-    height: 7vh;
+    height: 3em;
     display: flex;
     color: hsl(235, 19%, 35%);
 }
